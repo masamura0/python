@@ -1,0 +1,22 @@
+① 本書のサンプルのとおりにTa-Libをインストール
+!wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz  
+!tar -xzvf ta-lib-0.4.0-src.tar.gz
+%cd ta-lib
+!./configure --prefix=/usr 
+!make 
+!make install  
+!pip install Ta-Lib
+
+
+② Numpy のアップグレード
+!pip install numpy --upgrade
+
+
+③ ランタイムを再起動
+[メニュー] - [ランタイム] - [ランタイムを再起動] からランタイムを再起動
+
+
+④ 環境変数を設定
+!echo 'export LD_LIBRARY_PATH=/usr/lib' >> ~/.bashrc
+!source ~/.bashrc
+
