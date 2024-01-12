@@ -18,17 +18,9 @@ for index,item in df.iterrows():
     for par in document.paragraphs: 
         for column in columns: 
             if str(column) in par.text: 
-                if str(column) == "$start-day-time":
-                    item[column] = str(item[column]) 
-                if str(column) == "$end-day-time":
-                    item[column] = str(item[column]) 
                 if str(column) == "$users":
                     item[column] = str(item[column]) 
-                if str(column) == "$operation_file":
-                    item[column] = str(item[column])
-                if str(column) == "$cluster-1":
-                    item[column] = str(item[column])  
-                if str(column) == "$cluster-2":
+                if str(column) == "$file-1":
                     item[column] = str(item[column])  
                 par.text = par.text.replace(str(column),str (item[column]))
     outfile = os.path.join(path,"old",item["$file_name"]+".docx")

@@ -1,10 +1,10 @@
 from PIL import Image
 
 # JPEG画像のパス
-input_image_path = 'S__8626184.jpg'
+input_image_path = '<pngのファイルに変更したい対象のファイル>.jpg'
 
 # PNG画像の保存先パス
-output_image_path = 'S__8626184.png'
+output_image_path = '＜変更名にしたいファイル名＞.png'
 
 # 画像を開く
 image = Image.open(input_image_path)
@@ -13,4 +13,3 @@ image = Image.open(input_image_path)
 image.save(output_image_path, format='PNG')
 
 print('変換が完了しました。')
-
